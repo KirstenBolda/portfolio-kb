@@ -2,27 +2,214 @@ body {
     background-image: url(img/creampaper.png);
     /* Background pattern from Toptal Subtle Patterns: https://www.toptal.com/designers/subtlepatterns/ */
     font-family: 'Open Sans', sans-serif;
-    
     font-size: 1em;
 } 
 
-h1, h2, h3 {
+h1, h2 {
     font-family: 'Abril Fatface', cursive;
     letter-spacing: 1px;
     color: rgb(45, 45, 45);
+    text-align: center;
 }
 
+h1 {
+    font-size: 2em;
+}
 li {
     list-style: none;
 }
 
 a {
     text-decoration: none;
-    color:rgb(45, 45, 45);
+    color:rgb(50, 50, 50);
 }
+
+a:hover {
+    color:rgb(16, 16, 16);
+}
+
+/* header styling */
 
 nav ul {
     display: flex;
     flex-direction: column;
+    width: 200px;
 
 }
+
+nav ul li {
+    display: inline-block;
+    background-color: rgb(125,122,112, 0.5);
+    width: 150px;
+    margin: 1%;
+    padding: 5%;
+}
+
+nav ul li:hover {
+    background-color: rgb(125,122,112, 0.8);
+}
+
+
+.hand-pointer {
+    color:rgb(16, 16, 16);
+}
+
+.hand-pointer .fa-hand-point-right {
+    color:rgb(16, 16, 16, 0.3);
+}
+
+.hand-pointer .fa-hand-point-right:hover {
+    color:rgb(16, 16, 16,0.9);
+}
+
+.banner, .skill-types {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+
+nav {
+    margin-right: 15%;
+}
+
+/* about me styling */
+.image {
+    margin-right: 18%;
+}
+
+.intro, footer {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+
+.about-text {
+    width: 60%;
+}
+
+/* project styling */
+
+.proj-examples {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+
+.project {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proj-text {
+    width: 320px;
+}
+
+.fa-cog {
+    text-align: center;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color:  rgb(125,122,112, 0.9);
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 2px;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    top: 100px;
+    left: 35%;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+/* skills styling */
+
+.skill-group {
+    width: 250px;
+}
+
+.skill-icon {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+}
+
+.skill-icon .tooltip .tooltiptext {
+    position: absolute;
+    z-index: 1;
+    width: auto;
+    top: -50%;
+    left: -80%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
+/* contact styling */
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.contact-links a {
+    margin: 0 10%;
+}
+
+/* footer styling */
+
+footer p {
+    margin: 0 10px;
+}
+
+footer {
+    justify-content: center;
+}
+
+/* scroll to top button */
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    /* background-color: red; Set a background color */
+    color: rgb(125,122,112, 0.9); /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    font-size: 2.5em; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    color: #555; /* Turn dark-grey background on hover */
+  }
+  
+

@@ -24,77 +24,230 @@
 
 <body>
     <header>
-        <h1>Wendy Furman's Portfolio</h1>
+        <section class="banner">
+            <div>
+                <h1 id="page-top">Wendy Furman's Portfolio</h1>
+                <p>When old-fashioned hard work meets cutting edge technology</p>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <div class="hand-pointer">
+                        <i class="fas fa-hand-point-right"></i>
+                        <a class="nav-button" href="#about-me">About Me</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="hand-pointer">
+                        <i class="fas fa-hand-point-right"></i>
+                        <a class="nav-button" href="#projects">Projects</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="hand-pointer">
+                        <i class="fas fa-hand-point-right"></i>
+                        <a class="nav-button" href="#skills">Skills</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="hand-pointer">
+                        <i class="fas fa-hand-point-right"></i>
+                        <a class="nav-button" href="#contact">Contact</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
         <hr>
-        <h2>When old-fashioned hard work meets cutting edge technology</h2>
-        <img src="img/photo_placeholder.png" width=120px>
-        <nav>
-            <ul>
-                <li><i class="fas fa-hand-point-right fa-2x"></i><a href="#about-me">About Me</a></li>
-                <li><i class="fas fa-hand-point-right fa-2x"></i><a href="#projects">Projects</a></li>
-                <li><i class="fas fa-hand-point-right fa-2x"></i><a href="#skills">Skills</a></li>
-                <li><i class="fas fa-hand-point-right fa-2x"></i><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
     </header>
+
     <main>
         <section id="about-me">
             <h2>Hello and Welcome!</h2>
-            <p>I am a programmer, scientist, artist, and writer, and love combining all these interests to build
-                websites and applications that make our daily life a little better.</p>
-            <p>I'm currently enrolled in CodeCademy's Front End Engineer path, but can't wait to get out into the world
-                with my own creations.</p>
-            <p>Stay tuned for future developments!</p>
+            <div class="intro">
+                <div class="about-text">
+                    <p>I am a programmer, scientist, artist, and writer, and love combining all these interests to build
+                        websites and applications that make our daily life a little better.</p>
+                    <p>I'm currently enrolled in CodeCademy's Front End Engineer path, but can't wait to get out into
+                        the
+                        world
+                        with my own creations.</p>
+                    <p>Stay tuned for future developments!</p>
+                </div>
+
+                <div class="image">
+                    <img src="img/photo_placeholder.png" width=150px>
+                </div>
+            </div>
         </section>
+
+        <hr>
+
         <section id="projects">
             <h2>Projects</h2>
-            <ul>
-                <li><i class="fas fa-cog fa-2x"></i>Front Page of Novel Writing Class Site</li>
-                <a href="https://hollyswritingclasses.com/">
-                    <img src="img/hollys_writing_classes.png" width=300px>
-                </a>
-                <p>Layout and responsive styling created with Blocs application for front page of a site teaching
-                    techniques for writing and promotion of fiction writing.</p>
+            <ul class="proj-examples">
+                <div class="project">
+                    <li>
+                        <i class="fas fa-cog fa-2x"></i>
+                        <h4>Front Page of Novel Writing Class Site</h4>
+                    </li>
+                    <a class="tooltip" href="https://hollyswritingclasses.com/">
+                        <img class="tooltip" src="img/hollys_writing_classes.png" width=350px>
+                        <span class="tooltiptext">Click to visit site</span>
+                    </a>
+                    <p class="proj-text">Layout and responsive styling created with Blocs application for front page of website teaching fiction writing and promotion techniques.</p>
+                </div>
 
-                <li><i class="fas fa-cog fa-2x"></i>Sample Responsive Web Page</li>
-                <a href="https://kirstenbolda.github.io/sample_project_basic/">
-                    <img src="img/destinos_site.png" width=300px>
-                </a>
-                <p>Sample website of a fictional planet offering R&R for weary, well-heeled astronauts of the future.
-                </p>
+                <div class="project">
+                    <li>
+                        <i class="fas fa-cog fa-2x"></i>
+                        <h4>Sample Responsive Web Page</h4>
+                    </li>
+                    <a class="tooltip" href="https://kirstenbolda.github.io/sample_project_basic/">
+                        <img src="img/destinos_site.png" width=350px>
+                        <span class="tooltiptext">Click to visit site</span>
+                    </a>
+                    <p class="proj-text">Sample website of a fictional planet offering R&R for weary, well-heeled astronauts of the
+                        future.
+                    </p>
+                </div>
 
-                <li><i class="fas fa-cog fa-2x"></i>Styling For XenForo Forum Software</li>
-                <a href="https://legacy-systems.biz/index.php">
-                    <img src="img/ldd_frontpage.png" width=300px>
-                </a>
-                <p>CSS styling for community forum software used for small developer group.</p>
+                <div class="project">
+                    <li>
+                        <i class="fas fa-cog fa-2x"></i>
+                        <h4>Styling For XenForo Forum Software</h4>
+                    </li>
+                    <a class="tooltip" href="https://legacy-systems.biz/index.php">
+                        <img src="img/ldd_frontpage.png" width=350px>
+                        <span class="tooltiptext">Click to visit site</span>
+                    </a>
+                    <p class="proj-text">CSS styling utilizing vector images for community forum software used by a small developer training team.</p>
+                </div>
             </ul>
         </section>
+
+        <hr>
+
         <section id="skills">
             <h2>Skills</h2>
-            <ul>
-                <li><i class="fab fa-html5 fa-2x"></i>HTML5</li>
-                <li><i class="fab fa-css3 fa-2x"></i>CSS 3</li>
-                <li><i class="fab fa-js fa-2x"></i>JS</li>
-                <li><i class="fab fa-github fa-2x"></i>GitHub</li>
-                <li><i class="fab fa-markdown fa-2x"></i>Markdown</li>
-                <li><i class="fab fa-digital-ocean fa-2x"></i>Digital Ocean</li>
-                <li><i class="fab fa-sketch fa-2x"></i>Sketch</li>
-                <li><i class="fab fa-deviantart fa-2x"></i>Deviant Art</li>
-                <li><img src="img/gimp-logo-black.svg"></i>GIMP</li>
-                <li><img src="img/inkscape-logo.svg" width=29px>Inkscape</li>
-                <li><img src="img/blocs-app.svg"></i>Blocs</li>
-                <li><i class="fab fa-wordpress fa-2x"></i>WordPress</li>
-                <li><i class="fab fa-invision fa-2x"></i>InVision</li>
-                <li><img src="img/xenforo-logo-black.svg" width=75px></i>XenForo</li>
-                
-            </ul>
+
+            <div class="skill-types">
+
+                <div class="skill-group">
+                    <h3>Languages</h3>
+                    <ul class="skill-icon">
+                        <li>
+                            <i class="fab fa-html5 fa-2x tooltip">
+                            <span class="tooltiptext">HTML5</span>
+                            </i>
+                        </li>
+                        <li>
+                            <i class="fab fa-css3 fa-2x tooltip">
+                            <span class="tooltiptext">CSS3</span>
+                            </i>
+                        </li>
+                        <li>
+                            <i class="fab fa-js fa-2x tooltip">
+                            <span class="tooltiptext">JS</span>
+                            </i>
+                        </li>
+                        <li>
+                            <i class="fab fa-markdown fa-2x tooltip">
+                            <span class="tooltiptext">Markdown</span>
+                            </i>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="skill-group">
+                    <h3>Tools and Frameworks</h3>
+                    <ul class="skill-icon">
+                        <li><i class="fab fa-github fa-2x tooltip">
+                            <span class="tooltiptext">GitHub</span>
+                        </i>
+                    </li>
+                    
+                        <li>
+                            <i class="fab fa-wordpress fa-2x tooltip">
+                            <span class="tooltiptext">WordPress</span>
+                            </i>
+                        </li>
+                        <li class="tooltip">
+                            <img src="img/xenforo-logo-black.svg" width=75px>
+                            <span class="tooltiptext">XenForo</span>
+                        </i>
+                    </li>
+                    <li>
+                        <i class="fab fa-digital-ocean fa-2x tooltip">
+                        <span class="tooltiptext">Digital Ocean</span>    
+                        </i>
+                    </li>
+                    </ul>
+                </div>
+    
+    
+                <div class="skill-group">
+                    <h3>Design</h3> 
+                    <ul class="skill-icon">
+                        <li>
+                            <i class="fab fa-sketch fa-2x tooltip">
+                            <span class="tooltiptext">Sketch</span>
+                            </i>
+                        </li>
+                        <li>
+                            <i class="fab fa-invision fa-2x tooltip">
+                            <span class="tooltiptext">InVision</span>
+                            </i>
+                        </li>
+                        <li class="tooltip">
+                            <img src="img/blocs-app.svg">
+                            <span class="tooltiptext">Blocs</span>  
+                        </li>
+                        <li class="tooltip">
+                            <img src="img/gimp-logo-black.svg">
+                            <span class="tooltiptext">GIMP</span>
+                       </li>
+                        <li class="tooltip">
+                            <img src="img/inkscape-logo.svg" width=29px>
+                            <span class="tooltiptext">Inkscape</span>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+           
+
+        </section>
+
+        <hr>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Let's build something great!</p>
+            <p>I'd love to get in touch:</p>
+
+            <div class="contact-links">
+                <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="#"><i class="fab fa-github fa-2x"></i></a>
+                <a href="#"><i class="fab fa-codepen fa-2x"></i></a>
+                <a href="#"><i class="fas fa-envelope fa-2x"></i></a>
+                <a href="#"><i class="fab fa-deviantart fa-2x"></i></a>
+            </div>
+
+
         </section>
     </main>
+
+    <hr>
+
     <footer>
         <p>Built to last by Kirsten Bolda</p>
-        <span>Copyright 2021</span>
+        <p>Copyright 2021</p>
+        <i onclick="topFunction()" id="myBtn" title="Go to top" class="fas fa-arrow-circle-up fa-2x"></i>
     </footer>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>

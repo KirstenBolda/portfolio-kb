@@ -11,7 +11,7 @@
     - hover over image of project to have project slide out
   - use GitHub for version control (build locally and upload to GitHub pages)
 
-# Two page website:
+# Single page website:
 
 ## Front Page
   - Display my name with a brief bio
@@ -24,7 +24,7 @@
     - use font awesome icons 
     - hover reveals tool tip with the name of the software/skill
 
-## Contact Page
+## Contact Section
   - Display contact links to GitHub, Linked In and Deviant Art
 
 - Make a timeline
