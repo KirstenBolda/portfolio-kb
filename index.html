@@ -8,18 +8,12 @@
     <meta name="description" content="Student Portfolio Website">
     <title>Student Portfolio</title>
     <link href="style.css" type="text/css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+
     <link
         href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:ital,wght@0,300;0,400;1,400&display=swap"
         rel="stylesheet">
-
     <!-- font awesome kit -->
     <script src="https://kit.fontawesome.com/67811990fc.js" crossorigin="anonymous"></script>
-
-
 </head>
 
 <body>
@@ -32,36 +26,44 @@
             <nav>
                 <ul>
                     <li>
-                        <div class="hand-pointer">
-                        <i class="fas fa-hand-point-right"></i>
-                        <a class="nav-button" href="#about-me">About Me</a>
-                        </div>
+                        <a class="nav-button" href="#about-me">
+                            <div class="hand-pointer">
+                                <i class="fas fa-hand-point-right"></i>
+                                About Me
+                            </div>
+                        </a>
                     </li>
                     <li>
-                        <div class="hand-pointer">
-                        <i class="fas fa-hand-point-right"></i>
-                        <a class="nav-button" href="#projects">Projects</a>
-                        </div>
+                        <a class="nav-button" href="#projects">
+                            <div class="hand-pointer">
+                                <i class="fas fa-hand-point-right"></i>
+                                Projects
+                            </div>
+                        </a>
                     </li>
                     <li>
-                        <div class="hand-pointer">
-                        <i class="fas fa-hand-point-right"></i>
-                        <a class="nav-button" href="#skills">Skills</a>
-                        </div>
+                        <a class="nav-button" href="#skills">
+                            <div class="hand-pointer">
+                                <i class="fas fa-hand-point-right"></i>
+                                Skills
+                            </div>
+                        </a>
                     </li>
                     <li>
-                        <div class="hand-pointer">
-                        <i class="fas fa-hand-point-right"></i>
-                        <a class="nav-button" href="#contact">Contact</a>
-                        </div>
+                        <a class="nav-button" href="#contact">
+                            <div class="hand-pointer">
+                                <i class="fas fa-hand-point-right"></i>
+                                Contact
+                            </div>
+                        </a>
                     </li>
                 </ul>
             </nav>
         </section>
 
-        <hr>
+        
     </header>
-
+    <hr class="divider">
     <main>
         <section id="about-me">
             <h2>Hello and Welcome!</h2>
@@ -82,52 +84,57 @@
             </div>
         </section>
 
-        <hr>
 
         <section id="projects">
             <h2>Projects</h2>
             <ul class="proj-examples">
-                <div class="project">
-                    <li>
+                <li>
+                    <figure>
                         <i class="fas fa-cog fa-2x"></i>
                         <h4>Front Page of Novel Writing Class Site</h4>
-                    </li>
-                    <a class="tooltip" href="https://hollyswritingclasses.com/">
-                        <img class="tooltip" src="img/hollys_writing_classes.png" width=350px>
-                        <span class="tooltiptext">Click to visit site</span>
-                    </a>
-                    <p class="proj-text">Layout and responsive styling created with Blocs application for front page of website teaching fiction writing and promotion techniques.</p>
-                </div>
 
-                <div class="project">
-                    <li>
+                        <a class="tooltip" href="https://hollyswritingclasses.com/">
+                            <img class="tooltip" src="img/hollys_writing_classes.png" width=300px>
+                            <span class="tooltiptext">Click to visit site</span>
+                        </a>
+                        <figcaption>Layout and responsive styling created with Blocs application for front page
+                            of
+                            website teaching fiction writing and promotion techniques.</figcaption>
+                    </figure>
+                </li>
+
+                <li>
+                    <figure>
+
                         <i class="fas fa-cog fa-2x"></i>
                         <h4>Sample Responsive Web Page</h4>
-                    </li>
-                    <a class="tooltip" href="https://kirstenbolda.github.io/sample_project_basic/">
-                        <img src="img/destinos_site.png" width=350px>
-                        <span class="tooltiptext">Click to visit site</span>
-                    </a>
-                    <p class="proj-text">Sample website of a fictional planet offering R&R for weary, well-heeled astronauts of the
-                        future.
-                    </p>
-                </div>
 
-                <div class="project">
-                    <li>
+                        <a class="tooltip" href="https://kirstenbolda.github.io/sample_project_basic/">
+                            <img src="img/destinos_site.png" width=300px>
+                            <span class="tooltiptext">Click to visit site</span>
+                        </a>
+                        <figcaption>Sample website of a fictional planet offering R&R for weary, well-heeled
+                            astronauts of the
+                            future.
+                        </figcaption>
+                    </figure>
+                </li>
+
+                <li>
+                    <figure>
                         <i class="fas fa-cog fa-2x"></i>
                         <h4>Styling For XenForo Forum Software</h4>
-                    </li>
-                    <a class="tooltip" href="https://legacy-systems.biz/index.php">
-                        <img src="img/ldd_frontpage.png" width=350px>
-                        <span class="tooltiptext">Click to visit site</span>
-                    </a>
-                    <p class="proj-text">CSS styling utilizing vector images for community forum software used by a small developer training team.</p>
-                </div>
+
+                        <a class="tooltip" href="https://legacy-systems.biz/index.php">
+                            <img src="img/ldd_frontpage.png" width=300px>
+                            <span class="tooltiptext">Click to visit site</span>
+                        </a>
+                        <figcaption>CSS styling utilizing vector images for community forum software used by a
+                            small developer training team.</figcaption>
+                    </figure>
+                </li>
             </ul>
         </section>
-
-        <hr>
 
         <section id="skills">
             <h2>Skills</h2>
@@ -139,107 +146,120 @@
                     <ul class="skill-icon">
                         <li>
                             <i class="fab fa-html5 fa-2x tooltip">
-                            <span class="tooltiptext">HTML5</span>
+                                <span class="tooltiptext">HTML5</span>
                             </i>
                         </li>
                         <li>
                             <i class="fab fa-css3 fa-2x tooltip">
-                            <span class="tooltiptext">CSS3</span>
+                                <span class="tooltiptext">CSS3</span>
                             </i>
                         </li>
                         <li>
                             <i class="fab fa-js fa-2x tooltip">
-                            <span class="tooltiptext">JS</span>
+                                <span class="tooltiptext">JS</span>
                             </i>
                         </li>
                         <li>
                             <i class="fab fa-markdown fa-2x tooltip">
-                            <span class="tooltiptext">Markdown</span>
+                                <span class="tooltiptext">Markdown</span>
                             </i>
                         </li>
                     </ul>
                 </div>
-    
+
                 <div class="skill-group">
                     <h3>Tools and Frameworks</h3>
                     <ul class="skill-icon">
                         <li><i class="fab fa-github fa-2x tooltip">
-                            <span class="tooltiptext">GitHub</span>
-                        </i>
-                    </li>
-                    
+                                <span class="tooltiptext">GitHub</span>
+                            </i>
+                        </li>
+
                         <li>
                             <i class="fab fa-wordpress fa-2x tooltip">
-                            <span class="tooltiptext">WordPress</span>
+                                <span class="tooltiptext">WordPress</span>
                             </i>
                         </li>
                         <li class="tooltip">
                             <img src="img/xenforo-logo-black.svg" width=75px>
                             <span class="tooltiptext">XenForo</span>
-                        </i>
-                    </li>
-                    <li>
-                        <i class="fab fa-digital-ocean fa-2x tooltip">
-                        <span class="tooltiptext">Digital Ocean</span>    
-                        </i>
-                    </li>
+                            </i>
+                        </li>
+                        <li>
+                            <i class="fab fa-digital-ocean fa-2x tooltip">
+                                <span class="tooltiptext">Digital Ocean</span>
+                            </i>
+                        </li>
                     </ul>
                 </div>
-    
-    
+
+
                 <div class="skill-group">
-                    <h3>Design</h3> 
+                    <h3>Design</h3>
                     <ul class="skill-icon">
                         <li>
                             <i class="fab fa-sketch fa-2x tooltip">
-                            <span class="tooltiptext">Sketch</span>
+                                <span class="tooltiptext">Sketch</span>
                             </i>
                         </li>
                         <li>
                             <i class="fab fa-invision fa-2x tooltip">
-                            <span class="tooltiptext">InVision</span>
+                                <span class="tooltiptext">InVision</span>
                             </i>
                         </li>
                         <li class="tooltip">
                             <img src="img/blocs-app.svg">
-                            <span class="tooltiptext">Blocs</span>  
+                            <span class="tooltiptext">Blocs</span>
                         </li>
                         <li class="tooltip">
                             <img src="img/gimp-logo-black.svg">
                             <span class="tooltiptext">GIMP</span>
-                       </li>
+                        </li>
                         <li class="tooltip">
                             <img src="img/inkscape-logo.svg" width=29px>
                             <span class="tooltiptext">Inkscape</span>
                         </li>
-                        
+
                     </ul>
                 </div>
             </div>
-           
-
         </section>
 
-        <hr>
+        <hr class="divider">
 
         <section id="contact">
             <h2>Contact</h2>
             <p>Let's build something great!</p>
-            <p>I'd love to get in touch:</p>
 
             <div class="contact-links">
-                <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
-                <a href="#"><i class="fab fa-github fa-2x"></i></a>
-                <a href="#"><i class="fab fa-codepen fa-2x"></i></a>
-                <a href="#"><i class="fas fa-envelope fa-2x"></i></a>
-                <a href="#"><i class="fab fa-deviantart fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/kirsten-b-5b45651ab/">
+                    <i class="fab fa-linkedin fa-2x tooltip">
+                    <span class="tooltiptext">Visit Me @ Linked In</span>
+                    </i>
+                </a>
+                <a href="https://github.com/KirstenBolda">
+                    <i class="fab fa-github fa-2x tooltip">
+                    <span class="tooltiptext">Visit Me @ GitHub</span>
+                    </i></a>
+                <a href="https://codepen.io/Kirsten_B">
+                    <i class="fab fa-codepen fa-2x tooltip">
+                    <span class="tooltiptext">Visit Me @ CodePen</span>
+                    </i>
+                </a>
+                <a href="#">
+                    <i class="fas fa-envelope fa-2x tooltip">
+                    <span class="tooltiptext">Email Me</span>
+                    </i>
+                </a>
+                <a href="https://www.deviantart.com/larkwriter"><i class="fab fa-deviantart fa-2x tooltip">
+                    <span class="tooltiptext">Visit Me @ Deviant Art</span>
+                </i>
+                </a>
             </div>
-
-
         </section>
     </main>
 
-    <hr>
+    <hr class="footer-div">
 
     <footer>
         <p>Built to last by Kirsten Bolda</p>

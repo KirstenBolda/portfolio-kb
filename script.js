@@ -14,8 +14,12 @@ function scrollFunction() {
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-
-
   document.body.scrollTop = {top:0, behavior: 'smooth'}; // For Safari
   document.documentElement.scrollTop = {top:0, behavior: 'smooth'}; // For Chrome, Firefox, IE and Opera
+}
+
+spinningCog = document.getElementsByClassName("fa-cog");
+
+function spinCogs() {
+   spinningCog.style.transform = 'rotate(180deg)'
 }

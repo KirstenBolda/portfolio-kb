@@ -3,46 +3,68 @@ body {
     /* Background pattern from Toptal Subtle Patterns: https://www.toptal.com/designers/subtlepatterns/ */
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
+    color: rgb(45, 45, 45);
+    margin: 0;
 } 
 
 h1, h2 {
     font-family: 'Abril Fatface', cursive;
     letter-spacing: 1px;
-    color: rgb(45, 45, 45);
     text-align: center;
+    margin: 0 auto;
 }
 
 h1 {
     font-size: 2em;
 }
+
 li {
     list-style: none;
 }
 
 a {
     text-decoration: none;
-    color:rgb(50, 50, 50);
+    color: rgb(45, 45, 45);
 }
 
 a:hover {
-    color:rgb(16, 16, 16);
+    color:rgb(53,20,49);
 }
 
+hr.divider {
+    border-top: 1px dotted #351431;
+  }
+
+hr.footer-div {
+    border-top: 1px solid #351431;
+  }
 /* header styling */
 
-nav ul {
+header {
     display: flex;
     flex-direction: column;
-    width: 200px;
+    justify-content: center;
+    flex-flow: wrap;
+    margin: 2%;
+}
 
+.banner p {
+    text-align: center;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    width: 700px;
+    padding-left: 200px;
 }
 
 nav ul li {
     display: inline-block;
     background-color: rgb(125,122,112, 0.5);
-    width: 150px;
+    width: 100px;
     margin: 1%;
-    padding: 5%;
+    padding: 1%;
+    
 }
 
 nav ul li:hover {
@@ -51,7 +73,7 @@ nav ul li:hover {
 
 
 .hand-pointer {
-    color:rgb(16, 16, 16);
+    color: rgb(45, 45, 45);
 }
 
 .hand-pointer .fa-hand-point-right {
@@ -62,25 +84,31 @@ nav ul li:hover {
     color:rgb(16, 16, 16,0.9);
 }
 
-.banner, .skill-types {
-    display: flex;
-    justify-content: space-between;
-    flex-flow: wrap;
-}
 
 nav {
-    margin-right: 15%;
+    margin:0 auto;
 }
 
 /* about me styling */
+
+#about-me {
+    margin: 2%;
+}
 .image {
     margin-right: 18%;
+    margin-top: 2%;
+    border-radius: 50%;
+}
+
+.image img {
+    border-radius: 50%;
 }
 
 .intro, footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-flow: wrap;
+    margin-bottom: 1%;
 }
 
 .about-text {
@@ -89,31 +117,52 @@ nav {
 
 /* project styling */
 
+#projects {
+    background-image: url(img/tech-background-t.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 550px;
+    z-index: 0;
+}
+
+#projects h2, #skills h2 {
+    padding-top: 1%;
+}
 .proj-examples {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-flow: wrap;
+    margin: 1% auto;
 }
 
-.project {
-    width: 350px;
+.proj-examples li {
+    background-image: url(img/creampaper.png);
+    box-shadow: 0px 3px 7px 5px rgb(125,122,112, 0.6);
+    margin: 1%;
+}
+
+figure {
+    width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.project li {
+figure li {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.proj-text {
+figcaption {
     width: 320px;
 }
 
 .fa-cog {
     text-align: center;
+    color:#3f4739;
 }
 
 /* Tooltip container */
@@ -166,6 +215,14 @@ nav {
     font-size: 12px;
 }
 
+.skill-types {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    margin: 2%;
+}
+
+
 /* contact styling */
 
 #contact {
@@ -177,11 +234,20 @@ nav {
 .contact-links {
     display: flex;
     justify-content: space-around;
-    
 }
 
 .contact-links a {
     margin: 0 10%;
+}
+
+.contact-links .tooltip .tooltiptext {
+    position: absolute;
+    z-index: 1;
+    width: auto;
+    top: -50%;
+    left: -80%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
 }
 
 /* footer styling */
@@ -203,13 +269,40 @@ footer {
     right: 30px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     /* background-color: red; Set a background color */
-    color: rgb(125,122,112, 0.9); /* Text color */
+    color: rgb(165,70,87, 0.9); /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     font-size: 2.5em; /* Increase font size */
   }
   
   #myBtn:hover {
-    color: #555; /* Turn dark-grey background on hover */
+    color: rgb(53,20,49); /* Turn dark-grey background on hover */
   }
   
+  /* Site Colors */
+/* CSS HEX
+--platinum: #eaeaeaff;
+--silver-chalice: #b2b1acff;
+--rifle-green: #3f4739ff;
+--dark-purple: #351431ff;
+--english-red: #a54657ff;
+--english-red: rgb(165,70,87);
 
+
+CSS HSL
+--platinum: hsla(0, 0%, 92%, 1);
+--silver-chalice: hsla(50, 4%, 69%, 1);
+--rifle-green: hsla(94, 11%, 25%, 1);
+--dark-purple: hsla(307, 45%, 14%, 1);
+--english-red: hsla(349, 40%, 46%, 1); */
+
+@media (max-width: 1220px) {
+    #projects {
+        height: 950px; 
+    }
+}
+
+@media (max-width: 830px) {
+    #projects {
+        height: 1400px; 
+    }
+}
