@@ -44,7 +44,6 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-flow: wrap;
     margin: 2%;
 }
 
@@ -197,6 +196,12 @@ figcaption {
 
 .skill-group {
     width: 250px;
+    border: 1px dotted  rgb(125,122,112, 0.9);
+    margin: 1% 2%;
+}
+
+.skill-group h4 {
+    text-align: center;
 }
 
 .skill-icon {
@@ -306,3 +311,19 @@ CSS HSL
         height: 1400px; 
     }
 }
+
+@media (max-width: 500px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        
+        
+        }   
+    h1 {
+            font-size: 1.5em;
+        }
+
+    .banner {
+        margin: 2%;
+    }
+    }
