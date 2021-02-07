@@ -53,8 +53,7 @@ header {
 nav ul {
     display: flex;
     flex-direction: row;
-    width: 700px;
-    padding-left: 200px;
+    justify-content: center;
 }
 
 nav ul li {
@@ -132,7 +131,7 @@ nav {
 .proj-examples {
     display: flex;
     justify-content: space-around;
-    flex-flow: wrap;
+    flex-wrap: wrap;
     margin: 1% auto;
 }
 
@@ -316,8 +315,8 @@ CSS HSL
     nav ul {
         display: flex;
         flex-direction: column;
-        
-        
+        align-items: center;
+        padding: 0;
         }   
     h1 {
             font-size: 1.5em;
@@ -326,4 +325,11 @@ CSS HSL
     .banner {
         margin: 2%;
     }
+
+    .banner p {
+        width: 90%;
+        padding: 0 3%;
     }
+    }
+
+    
